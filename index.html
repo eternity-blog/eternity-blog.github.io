@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-由数据范围反推算法复杂度以及算法内容" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/08/09/%E7%94%B1%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4%E5%8F%8D%E6%8E%A8%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E5%86%85%E5%AE%B9/" class="article-date">
+  <time class="dt-published" datetime="2023-08-09T08:14:22.747Z" itemprop="datePublished">2023-08-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="由数据范围反推算法复杂度以及算法内容"><a href="#由数据范围反推算法复杂度以及算法内容" class="headerlink" title="由数据范围反推算法复杂度以及算法内容"></a>由数据范围反推算法复杂度以及算法内容</h2><p>一般ACM或者笔试题的时间限制是1秒或2秒。</p>
+<p>在这种情况下，C++代码中的操作次数控制在 $10^7$ 为最佳。</p>
+<p>下面给出在不同数据范围下，代码的时间复杂度和算法该如何选择：</p>
+<ol>
+<li>n≤30, 指数级别, dfs+剪枝，状态压缩dp</li>
+<li>n≤100 &#x3D;&gt; O(n3)，floyd，dp，高斯消元</li>
+<li>n≤1000 &#x3D;&gt; O(n2)，O(n<sup>2</sup>logn)，dp，二分，朴素版Dijkstra、朴素版Prim、Bellman-Ford</li>
+<li>n≤10000 &#x3D;&gt; O(n∗n√)，块状链表、分块、莫队</li>
+<li>n≤100000 &#x3D;&gt; O(nlogn) &#x3D;&gt; 各种sort，线段树、树状数组、set&#x2F;map、heap、拓扑排序、dijkstra+heap、prim+heap、Kruskal、spfa、求凸包、求半平面交、二分、CDQ分治、整体二分、后缀数组、树链剖分、动态树</li>
+<li>n≤1000000 &#x3D;&gt; O(n), 以及常数较小的 O(nlogn) 算法 &#x3D;&gt; 单调队列、 hash、双指针扫描、并查集，kmp、AC自动机，常数比较小的 O(nlogn) 的做法：sort、树状数组、heap、dijkstra、spfa</li>
+<li>n≤10000000 &#x3D;&gt; O(n)，双指针扫描、kmp、AC自动机、线性筛素数</li>
+<li>n≤10<sup>9</sup> &#x3D;&gt; O($\sqrt{n}$)，判断质数</li>
+<li>n≤10<sup>18</sup> &#x3D;&gt; O(logn)，最大公约数，快速幂，数位DP</li>
+<li>n≤10<sup>1000</sup> &#x3D;&gt; O((logn)<sup>2</sup>)，高精度加减乘除</li>
+<li>n≤10<sup>100000</sup> &#x3D;&gt; O(logk×loglogk)，k表示位数，高精度加减、FFT&#x2F;NTT</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/08/09/%E7%94%B1%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4%E5%8F%8D%E6%8E%A8%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E5%86%85%E5%AE%B9/" data-id="cll3glzca0000xkw0b99db4b4" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/08/09/%E7%94%B1%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4%E5%8F%8D%E6%8E%A8%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E5%86%85%E5%AE%B9/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
