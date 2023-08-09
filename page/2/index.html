@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>NotePad</title><meta name="author" content="JacksonLee"><meta name="copyright" content="JacksonLee"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="NotePad">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="NotePad">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="JacksonLee">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'NotePad',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-08-09 18:49:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="NotePad"><span class="site-name">NotePad</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">NotePad</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E6%A0%91%E4%B8%8E%E5%9B%BE%E7%9A%84%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" title="树与图的深度优先遍历">树与图的深度优先遍历</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:04:09.355Z" title="发表于 2023-08-09 18:04:09">2023-08-09</time></span></div><div class="content">树与图的深度优先遍历[toc]
+树的重心题目描述给定一颗树，树中包含 n 个结点（编号 1∼n）和 n−1条无向边。
+请你找到树的重心，并输出将重心删除后，剩余各个连通块中点数的最大值。
+重心定义：重心是指树中的一个结点，如果将这个点删除后，剩余各个连通块中点数的最大值最小，那么这个节点被称为树的重心。
+&#x3D;&#x3D;输入格式&#x3D;&#x3D;
+​	第一行包含整数 n，表示树的结点数。
+​	接下来 n−1行，每行包含两个整数 a 和 b，表示点 a 和点 b之间存在一条边。
+&#x3D;&#x3D;输出格式&#x3D;&#x3D;
+​	输出一个整数 m，表示将重心删除后，剩余各个连通块中点数的最大值。
+&#x3D;&#x3D;数据范围&#x3D;&#x3D;
+​	1 ≤ n ≤ 105 
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+​	9
+​	1 2
+​	1 7
+​	1 4
+​	2 8
+​	2 5
+​	4 3
+​	3 9
+​	4 6
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+​	4
+完整代码1234567891011121314151617 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/BFS/" title="BFS">BFS</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:01:29.870Z" title="发表于 2023-08-09 18:01:29">2023-08-09</time></span></div><div class="content">BFS[toc]
+走迷宫题目描述1234567891011121314151617181920212223242526给定一个 n×m 的二维整数数组，用来表示一个迷宫，数组中只包含 0 或 1，其中 0 表示可以走的路，1表示不可通过的墙壁。最初，有一个人位于左上角 (1,1) 处，已知该人每次可以向上、下、左、右任意一个方向移动一个位置。请问，该人从左上角移动至右下角 (n,m) 处，至少需要移动多少次。数据保证 (1,1) 处和 (n,m) 处的数字为 0，且一定至少存在一条通路。输入格式	第一行包含两个整数 n 和 m。	接下来 n 行，每行包含 m 个整数（0 或 1），表示完整的二维数组迷宫。输出格式	输出一个整数，表示从左上角移动至右下角的最少移动次数。数据范围	1 ≤ n,m ≤ 100	输入样例：5 50 1 0 0 00 1 0 1 00 0 0 0 00 1 1 1 00 0 0 1 0输出样例：8
+
+完整代码123456789101112131415161718192021222324252627282930313233343536373839404142#in ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/DFS/" title="DFS">DFS</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T09:53:59.405Z" title="发表于 2023-08-09 17:53:59">2023-08-09</time></span></div><div class="content">DFS[toc]
+排列数字题目描述12345678910111213141516171819202122给定一个整数 n，将数字 1∼n 排成一排，将会有很多种排列方法。现在，请你按照字典序将所有的排列方法输出。输入格式	共一行，包含一个整数 n。输出格式	按字典序输出所有排列方案，每个方案占一行。数据范围	1 ≤ n ≤ 7输入样例：3输出样例：1 2 31 3 22 1 32 3 13 1 23 2 1
+
+完整代码
+1234567891011121314151617181920212223242526272829303132#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 10;int n;int path[N];bool occupied[N];void dfs(int u) &#123;    if(u == n) &#123;        for(int i = 0; i &lt; n; ++i) cout&lt;&lt;path[i]&lt;&lt;&quot; &quot;;        r ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E6%9C%80%E7%9F%AD%E8%B7%AF%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" title="最短路问题汇总">最短路问题汇总</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T09:45:59.884Z" title="发表于 2023-08-09 17:45:59">2023-08-09</time></span></div><div class="content">最短路问题汇总
+Dijkstra-朴素~O(n2)
+初始化距离数组, dist[1] &#x3D; 0, dist[i] &#x3D; inf;
+for n次循环 每次循环确定一个min加入S集合中，n次之后就得出所有的最短距离
+将不在S中dist_min的点-&gt;t
+t-&gt;S加入最短路集合
+用t更新到其他点的距离
+
+Dijkstra-堆优化~O($m\log m$)
+利用邻接表，优先队列
+priority_queue&lt;PII, vector, greater&gt; heap;&#x2F;&#x2F;小根堆
+利用堆顶来更新其他点，并加入堆中类似宽搜
+
+Bellman_ford~O(nm)
+注意连锁想象需要备份, struct Edge{inta,b,c} Edge[M];
+初始化dist, 松弛dist[x.b] &#x3D; min(dist[x.b], backup[x.a]+x.w);
+松弛k次，每次访问m条边
+
+Spfa~O(n)-O(nm)
+利用队列优化仅加入修改过的地方
+for k次
+for 所有边利用宽搜模型去优化bellman_ford算法
+更新队列中 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E5%A5%B6%E7%89%9B%E6%8E%92%E9%98%9F/" title="奶牛排队">奶牛排队</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T09:40:45.648Z" title="发表于 2023-08-09 17:40:45">2023-08-09</time></span></div><div class="content">奶牛排队[toc]
+题目描述123456789101112131415161718192021222324252627282930约翰的农场有 n 头奶牛，每一头奶牛都有一个正整数编号。不同奶牛的编号不同。现在，这 n 头牛按某种顺序排成一队，每头牛都拿出一张纸条写下了其前方相邻牛的编号以及其后方相邻牛的编号。注意：	这些奶牛并没有记下自己的编号。	位于队首的奶牛前方没有牛，所以它在前方相邻牛处写下的是数字 0。	位于队尾的奶牛后方没有牛，所有它在后方相邻牛处写下的是数字 0。将所有奶牛写下的纸条收集起来并打乱顺序后交给你。你的任务是根据这些纸条信息，推导出完整的奶牛队列。输入格式	第一行包含整数 n，表示奶牛数量。	接下来 n行，每行包含两个整数 ai,bi，表示其中一头奶牛写下的其前方相邻牛的编号以及其后方相邻牛的编号。	注意，ai 或 bi 可能为 0，这表示该奶牛没有前方相邻牛或后方相邻牛。	输出格式	输出共一行，n 个整数，按照从前到后的顺序输出队列中每头奶牛的编号。数据范围	前 5 个测试点满足 2≤n≤5。	所有测试点满足 2≤n≤2×10^5，0≤ai,bi≤10^6。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E5%8F%8C%E8%89%B2%E7%90%83/" title="双色球">双色球</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T09:38:27.833Z" title="发表于 2023-08-09 17:38:27">2023-08-09</time></span></div><div class="content">双色球[toc]
+题目描述12345678910111213141516171819202122232425262728约翰和贝茜玩抽球游戏。一个盒子中有 n个白球和 m个黑球。双方轮流行动，由约翰先行。每当轮到一方行动时，其从盒中随机抽出一个球，盒子中的每个球被抽出的概率相同。率先抽出白球的一方获胜。此外，由于贝茜的手比较笨拙，所以每当她抽出一个球后，盒子都会剧烈摇晃，随后就会有恰好一个球掉出盒子（如果盒中有球的话），盒子中的每个球掉出的概率相同。掉出的球无论是什么颜色，都予以作废。当盒子中没有球时，如果仍未分出胜负，则判定为贝茜获胜。请你计算，约翰获胜的概率。输入格式	一行，两个整数 n,m。输出格式	一个实数，表示约翰获胜的概率。	输出结果与正确答案的绝对误差不超过 10?9，则视为正确。数据范围	前 4个测试点满足 0≤n,m≤100。	所有测试点满足 0≤n,m≤1000。	输入样例1：1 3输出样例1：0.500000000输入样例2：5 5输出样例2：0.658730159
+
+完整代码12345678910111213141516171819202122232425262 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E7%94%B1%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4%E5%8F%8D%E6%8E%A8%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E5%86%85%E5%AE%B9/" title="由数据范围反推算法复杂度以及算法内容">由数据范围反推算法复杂度以及算法内容</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T08:14:22.747Z" title="发表于 2023-08-09 16:14:22">2023-08-09</time></span></div><div class="content">由数据范围反推算法复杂度以及算法内容一般ACM或者笔试题的时间限制是1秒或2秒。
+在这种情况下，C++代码中的操作次数控制在 $10^7$ 为最佳。
+下面给出在不同数据范围下，代码的时间复杂度和算法该如何选择：
+
+n≤30, 指数级别, dfs+剪枝，状态压缩dp
+n≤100 &#x3D;&gt; O(n3)，floyd，dp，高斯消元
+n≤1000 &#x3D;&gt; O(n2)，O(n2logn)，dp，二分，朴素版Dijkstra、朴素版Prim、Bellman-Ford
+n≤10000 &#x3D;&gt; O(n∗n√)，块状链表、分块、莫队
+n≤100000 &#x3D;&gt; O(nlogn) &#x3D;&gt; 各种sort，线段树、树状数组、set&#x2F;map、heap、拓扑排序、dijkstra+heap、prim+heap、Kruskal、spfa、求凸包、求半平面交、二分、CDQ分治、整体二分、后缀数组、树链剖分、动态树
+n≤1000000 &#x3D;&gt; O(n), 以及常数较小的 O(nlogn) 算法 &#x3D;&gt; 单调队列、 h ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">JacksonLee</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/%E5%8C%88%E7%89%99%E5%88%A9%E7%AE%97%E6%B3%95/" title="匈牙利算法">匈牙利算法</a><time datetime="2023-08-09T10:46:12.265Z" title="发表于 2023-08-09 18:46:12">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/%E6%9F%93%E8%89%B2%E6%B3%95%E5%88%A4%E5%AE%9A%E4%BA%8C%E5%88%86%E5%9B%BE/" title="染色法判定二分图">染色法判定二分图</a><time datetime="2023-08-09T10:44:18.737Z" title="发表于 2023-08-09 18:44:18">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/Kruskal/" title="Kruskal">Kruskal</a><time datetime="2023-08-09T10:41:21.167Z" title="发表于 2023-08-09 18:41:21">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/Prim/" title="Prim">Prim</a><time datetime="2023-08-09T10:39:34.060Z" title="发表于 2023-08-09 18:39:34">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/Floyd/" title="Floyd">Floyd</a><time datetime="2023-08-09T10:33:39.683Z" title="发表于 2023-08-09 18:33:39">2023-08-09</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/bellman-ford/" style="font-size: 1.1em; color: #999">bellman-ford</a> <a href="/tags/BFS/" style="font-size: 1.1em; color: #999">BFS</a> <a href="/tags/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" style="font-size: 1.1em; color: #999">广度优先遍历</a> <a href="/tags/AcWing%E5%91%A8%E8%B5%9B/" style="font-size: 1.3em; color: #99a1ac">AcWing周赛</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 1.1em; color: #999">动态规划</a> <a href="/tags/%E6%90%9C%E7%B4%A2%E4%B8%8E%E5%9B%BE%E8%AE%BA/" style="font-size: 1.5em; color: #99a9bf">搜索与图论</a> <a href="/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" style="font-size: 1.1em; color: #999">拓扑排序</a> <a href="/tags/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" style="font-size: 1.5em; color: #99a9bf">算法基础课</a> <a href="/tags/AcWing/" style="font-size: 1.1em; color: #999">AcWing</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" style="font-size: 1.1em; color: #999">深度优先遍历</a> <a href="/tags/Floyd/" style="font-size: 1.1em; color: #999">Floyd</a> <a href="/tags/Prim/" style="font-size: 1.1em; color: #999">Prim</a> <a href="/tags/DFS/" style="font-size: 1.1em; color: #999">DFS</a> <a href="/tags/Dijkstra/" style="font-size: 1.1em; color: #999">Dijkstra</a> <a href="/tags/Kruskal/" style="font-size: 1.1em; color: #999">Kruskal</a> <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/" style="font-size: 1.1em; color: #999">二分图</a> <a href="/tags/spfa/" style="font-size: 1.1em; color: #999">spfa</a> <a href="/tags/%E6%9F%93%E8%89%B2%E6%B3%95/" style="font-size: 1.1em; color: #999">染色法</a> <a href="/tags/%E5%8C%88%E7%89%99%E5%88%A9%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">匈牙利算法</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">17</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-08-09T10:49:04.595Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By JacksonLee</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -53,7 +53,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-08-09 17:31:21'
+  postUpdate: '2023-08-09 18:49:04'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -157,13 +157,134 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="NotePad"><span class="site-name">NotePad</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">NotePad</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E7%94%B1%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4%E5%8F%8D%E6%8E%A8%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E5%86%85%E5%AE%B9/" title="由数据范围反推算法复杂度以及算法内容">由数据范围反推算法复杂度以及算法内容</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T08:14:22.747Z" title="发表于 2023-08-09 16:14:22">2023-08-09</time></span></div><div class="content">由数据范围反推算法复杂度以及算法内容一般ACM或者笔试题的时间限制是1秒或2秒。
-在这种情况下，C++代码中的操作次数控制在 $10^7$ 为最佳。
-下面给出在不同数据范围下，代码的时间复杂度和算法该如何选择：
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="NotePad"><span class="site-name">NotePad</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">NotePad</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E5%8C%88%E7%89%99%E5%88%A9%E7%AE%97%E6%B3%95/" title="匈牙利算法">匈牙利算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:46:12.265Z" title="发表于 2023-08-09 18:46:12">2023-08-09</time></span></div><div class="content">匈牙利算法[toc]
+二分图的最大匹配题目描述
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+123452 2 41 11 22 12 2
 
-n≤30, 指数级别, dfs+剪枝，状态压缩dp
-n≤100 &#x3D;&gt; O(n3)，floyd，dp，高斯消元
-n≤1000 &#x3D;&gt; O(n2)，O(n2logn)，dp，二分，朴素版Dijkstra、朴素版Prim、Bellman-Ford
-n≤10000 &#x3D;&gt; O(n∗n√)，块状链表、分块、莫队
-n≤100000 &#x3D;&gt; O(nlogn) &#x3D;&gt; 各种sort，线段树、树状数组、set&#x2F;map、heap、拓扑排序、dijkstra+heap、prim+heap、Kruskal、spfa、求凸包、求半平面交、二分、CDQ分治、整体二分、后缀数组、树链剖分、动态树
-n≤1000000 &#x3D;&gt; O(n), 以及常数较小的 O(nlogn) 算法 &#x3D;&gt; 单调队列、 h ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">JacksonLee</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/%E7%94%B1%E6%95%B0%E6%8D%AE%E8%8C%83%E5%9B%B4%E5%8F%8D%E6%8E%A8%E7%AE%97%E6%B3%95%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E5%86%85%E5%AE%B9/" title="由数据范围反推算法复杂度以及算法内容">由数据范围反推算法复杂度以及算法内容</a><time datetime="2023-08-09T08:14:22.747Z" title="发表于 2023-08-09 16:14:22">2023-08-09</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/AcWing/" style="font-size: 1.1em; color: #999">AcWing</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-08-09T09:31:21.729Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By JacksonLee</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+12
+
+完整代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051//时间复杂度最坏情况下：O(nm)#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 510, M = 1e5 + 10;int n1, n2, m;int h[N], e[M], ne[M], idx;int match[N];bool st[N];//st 标记是否递归找过， match[x]：和 x 编号的男生的编号void add(int a, int b) &#123;    e[idx] = b, ne[idx] = h[a], h[a] = idx++;&#125;bool find(in ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E6%9F%93%E8%89%B2%E6%B3%95%E5%88%A4%E5%AE%9A%E4%BA%8C%E5%88%86%E5%9B%BE/" title="染色法判定二分图">染色法判定二分图</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:44:18.737Z" title="发表于 2023-08-09 18:44:18">2023-08-09</time></span></div><div class="content">染色法判定二分图[toc]
+染色法
+​	将所有点分成两个集合，使得所有边只出现在集合之间，就是二分图​	二分图：一定不含有奇数环，可能包含长度为偶数的环， 不一定是连通图
+如何判断一个图是不是二分图？
+​	开始对任意一未染色的顶点染色。
+​	判断其相邻的顶点中，若未染色则将其染上和相邻顶点不同的颜色。
+​	若已经染色且颜色和相邻顶点的颜色相同则说明不是二分图，若颜色不同则继续判断。
+题目描述
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+123454 41 31 42 32 4
+
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+1Yes
+
+完整代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 1e5 + 10, M = 2e5 + 10;// 由于是无向图, 顶点数最大是N，那么边数M最大是顶点数的2 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/Kruskal/" title="Kruskal">Kruskal</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:41:21.167Z" title="发表于 2023-08-09 18:41:21">2023-08-09</time></span></div><div class="content">Kruskal[toc]
+Kruskal算法求最小生成树题目描述
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+1234564 51 2 11 3 21 4 32 3 23 4 4
+
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+16
+
+完整代码1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 2e5 + 10;int n, m;int p[N];struct Edge &#123;    int a, b, w;        bool operator &lt; (const Edge &amp;W)const &#123;        return w &lt; W.w;    &#125;&#125;edges[N];int find(int x) &#123;    if(p[x] != x)  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/Prim/" title="Prim">Prim</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:39:34.060Z" title="发表于 2023-08-09 18:39:34">2023-08-09</time></span></div><div class="content">Prim[toc]
+Prim算法求最小生成树题目描述
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+1234564 51 2 11 3 21 4 32 3 23 4 4
+
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+16
+
+完整代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138/*S:当前已经在联通块中的所有点的集合1. dist[i] = inf2. for n 次    t&lt;-S外离S最近的点  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/Floyd/" title="Floyd">Floyd</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:33:39.683Z" title="发表于 2023-08-09 18:33:39">2023-08-09</time></span></div><div class="content">Floyd[toc]
+时间复杂度：O(n)
+Floyd求最短路题目描述
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+1234563 3 21 2 12 3 21 3 12 11 3
+
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+12impossible1
+
+完整代码12345678910111213141516171819202122232425262728293031323334353637383940#include &lt;bits/stdc++.h&gt;using namespace std;const int N = 2e2 + 10, INF = 1e9;int n, m, Q;int dist[N][N];void Floyd() &#123;    for(int k = 1; k &lt;= n; ++k)        for(int i = 1; i &lt;= n; ++i)            for(int j = 1; j &lt;= n; ++j)                dist[i][j] = min(dist[ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/spfa/" title="spfa">spfa</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:28:35.245Z" title="发表于 2023-08-09 18:28:35">2023-08-09</time></span></div><div class="content">spfa[toc]
+spfa：对bellman_ford算法的优化
+Bellman_ford算法会遍历所有的边，但是有很多的边遍历了其实没有什么意义，我们只用遍历那些到源点距离变小的点所连接的边即可，只有当一个点的前驱结点更新了，该节点才会得到更新；因此考虑到这一点，我们将创建一个队列每一次加入距离被更新的结点。
+
+st数组的作用：判断当前的点是否已经加入到队列当中了；已经加入队列的结点就不需要反复的把该点加入到队列中了，就算此次还是会更新到源点的距离，那只用更新一下数值而不用加入到队列当中。即便不使用st数组最终也没有什么关系，但是使用的好处在于可以提升效率。
+
+SPFA算法看上去和Dijstra算法长得有一些像但是其中的意义还是相差甚远的。
+
+Bellman_ford算法里最后return-1的判断条件写的是dist[n]&gt;0x3f3f3f3f&#x2F;2;而spfa算法写的是***dist[n]&#x3D;&#x3D;0x3f3f3f3f;其原因在于Bellman_ford算法会遍历所有的边，因此不管是不是和源点连通的边它都会得到更新；但是SPFA算法不一样，它相当于采用 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/bellman-ford/" title="bellman-ford">bellman-ford</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:15:21.571Z" title="发表于 2023-08-09 18:15:21">2023-08-09</time></span></div><div class="content">bellman-ford[toc]
+bellman - ford算法擅长解决有边数限制的最短路问题。
+1时间复杂度：O(nm) \tag&#123;n为点数，m为边数&#125;
+
+Bellman - ford 算法是求含负权图的单源最短路径的一种算法，效率较低，代码难度较小。其原理为连续进行松弛，在每次松弛时把每条边都更新一下，若在 n-1 次松弛后还能更新，则说明图中有负环，因此无法得出结果，否则就完成。
+(通俗的来讲就是：假设 1 号点到 n 号点是可达的，每一个点同时向指向的方向出发，更新相邻的点的最短距离，通过循环 n-1 次操作，若图中不存在负环，则 1 号点一定会到达 n 号点，若图中存在负环，则在 n-1 次松弛后一定还会更新)
+具体步骤：
+n次迭代，每次循环所有边
+123for \ n \ 次 \\for 所有边 \ (a,b,w) \\dist[b] = min(dist[b], backup[a] + w)  \tag&#123;松弛操作&#125;
+
+注意：backup[] 数组是上一次迭代后 dist[] 数组的备份，由于是每个点同时向外出发，因此需要对 di ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/Dijkstra/" title="Dijkstra">Dijkstra</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:12:36.085Z" title="发表于 2023-08-09 18:12:36">2023-08-09</time></span></div><div class="content">Dijkstra[toc]
+稠密图用邻接矩阵来存，稀疏图用邻接表来存。
+图解
+
+
+
+
+
+Dijkstra求最短路 I题目描述给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。
+请你求出 1号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 −1。
+&#x3D;&#x3D;输入格式&#x3D;&#x3D;
+​	第一行包含整数 n和 m。
+​	接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。
+&#x3D;&#x3D;输出格式&#x3D;&#x3D;
+​	输出一个整数，表示 1号点到 n号点的最短距离。
+​	如果路径不存在，则输出 −1。
+&#x3D;&#x3D;数据范围&#x3D;&#x3D;
+​	1≤n≤500,1≤m≤10^5,​	图中涉及边长均不超过10000。
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+12343 31 2 22 3 11 3 4
+
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+13
+
+完整代码12345678910111213141516 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" title="拓扑排序">拓扑排序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:08:10.281Z" title="发表于 2023-08-09 18:08:10">2023-08-09</time></span></div><div class="content">拓扑排序[toc]
+有向图的拓扑序列题目描述给定一个 n个点 m 条边的有向图，点的编号是 1 到 n，图中可能存在重边和自环。
+请输出任意一个该有向图的拓扑序列，如果拓扑序列不存在，则输出 −1。
+若一个由图中所有点构成的序列 A满足：对于图中的每条边 (x,y)，x 在 A 中都出现在 y 之前，则称 A
+是该图的一个拓扑序列。
+&#x3D;&#x3D;输入格式&#x3D;&#x3D;
+​	第一行包含两个整数 n和 m。
+​	接下来 m行，每行包含两个整数 x 和 y，表示存在一条从点 x 到点 y 的有向边 (x,y)。
+&#x3D;&#x3D;输出格式&#x3D;&#x3D;
+​	共一行，如果存在拓扑序列，则输出任意一个合法的拓扑序列即可。
+​	否则输出 −1。
+&#x3D;&#x3D;数据范围&#x3D;&#x3D;
+​	1 ≤ n,m ≤105 
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+​	3 3
+​	1 2
+​	2 3
+​	1 3
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+​	1 2 3
+解题思路首先记录各个点的入度
+然后将入度为 0 的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/uncategorized/%E6%A0%91%E4%B8%8E%E5%9B%BE%E7%9A%84%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" title="树与图的广度优先遍历">树与图的广度优先遍历</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-08-09T10:06:48.119Z" title="发表于 2023-08-09 18:06:48">2023-08-09</time></span></div><div class="content">树与图的广度优先遍历[toc]
+图中点的层次题目描述给定一个 n 个点 m条边的有向图，图中可能存在重边和自环。
+所有边的长度都是 1，点的编号为 1∼n。
+请你求出 1号点到 n 号点的最短距离，如果从 1 号点无法走到 n 号点，输出 −1。
+&#x3D;&#x3D;输入格式&#x3D;&#x3D;
+​	第一行包含两个整数 n和 m。
+​	接下来 m行，每行包含两个整数 a 和 b，表示存在一条从 a 走到 b 的长度为 1的边。
+&#x3D;&#x3D;输出格式&#x3D;&#x3D;
+​	输出一个整数，表示 1号点到 n号点的最短距离。
+&#x3D;&#x3D;数据范围&#x3D;&#x3D;
+​	1 ≤ n,m ≤ 105
+&#x3D;&#x3D;输入样例&#x3D;&#x3D;
+​	4 5
+​	1 2
+​	2 3
+​	3 4
+​	1 3
+​	1 4
+&#x3D;&#x3D;输出样例&#x3D;&#x3D;
+​	1
+完整代码12345678910111213141516171819202122232425262728293031323334353637383940414243 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">JacksonLee</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">19</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/%E5%8C%88%E7%89%99%E5%88%A9%E7%AE%97%E6%B3%95/" title="匈牙利算法">匈牙利算法</a><time datetime="2023-08-09T10:46:12.265Z" title="发表于 2023-08-09 18:46:12">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/%E6%9F%93%E8%89%B2%E6%B3%95%E5%88%A4%E5%AE%9A%E4%BA%8C%E5%88%86%E5%9B%BE/" title="染色法判定二分图">染色法判定二分图</a><time datetime="2023-08-09T10:44:18.737Z" title="发表于 2023-08-09 18:44:18">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/Kruskal/" title="Kruskal">Kruskal</a><time datetime="2023-08-09T10:41:21.167Z" title="发表于 2023-08-09 18:41:21">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/Prim/" title="Prim">Prim</a><time datetime="2023-08-09T10:39:34.060Z" title="发表于 2023-08-09 18:39:34">2023-08-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/uncategorized/Floyd/" title="Floyd">Floyd</a><time datetime="2023-08-09T10:33:39.683Z" title="发表于 2023-08-09 18:33:39">2023-08-09</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/bellman-ford/" style="font-size: 1.1em; color: #999">bellman-ford</a> <a href="/tags/BFS/" style="font-size: 1.1em; color: #999">BFS</a> <a href="/tags/%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" style="font-size: 1.1em; color: #999">广度优先遍历</a> <a href="/tags/AcWing%E5%91%A8%E8%B5%9B/" style="font-size: 1.3em; color: #99a1ac">AcWing周赛</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 1.1em; color: #999">动态规划</a> <a href="/tags/%E6%90%9C%E7%B4%A2%E4%B8%8E%E5%9B%BE%E8%AE%BA/" style="font-size: 1.5em; color: #99a9bf">搜索与图论</a> <a href="/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/" style="font-size: 1.1em; color: #999">拓扑排序</a> <a href="/tags/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E8%AF%BE/" style="font-size: 1.5em; color: #99a9bf">算法基础课</a> <a href="/tags/AcWing/" style="font-size: 1.1em; color: #999">AcWing</a> <a href="/tags/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86/" style="font-size: 1.1em; color: #999">深度优先遍历</a> <a href="/tags/Floyd/" style="font-size: 1.1em; color: #999">Floyd</a> <a href="/tags/Prim/" style="font-size: 1.1em; color: #999">Prim</a> <a href="/tags/DFS/" style="font-size: 1.1em; color: #999">DFS</a> <a href="/tags/Dijkstra/" style="font-size: 1.1em; color: #999">Dijkstra</a> <a href="/tags/Kruskal/" style="font-size: 1.1em; color: #999">Kruskal</a> <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/" style="font-size: 1.1em; color: #999">二分图</a> <a href="/tags/spfa/" style="font-size: 1.1em; color: #999">spfa</a> <a href="/tags/%E6%9F%93%E8%89%B2%E6%B3%95/" style="font-size: 1.1em; color: #999">染色法</a> <a href="/tags/%E5%8C%88%E7%89%99%E5%88%A9%E7%AE%97%E6%B3%95/" style="font-size: 1.1em; color: #999">匈牙利算法</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><span class="card-archive-list-count">17</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-08-09T10:49:04.595Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By JacksonLee</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
