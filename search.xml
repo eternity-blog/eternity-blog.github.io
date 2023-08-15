@@ -313,6 +313,17 @@
     
     
     <entry>
+      <title></title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<p>title: 友情链接<br>date: 2018-06-07 22:17:49<br>type: “link”</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -329,17 +340,6 @@
       <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<p>title: 友情链接<br>date: 2018-06-07 22:17:49<br>type: “link”</p>]]></content>
       
     </entry>
     
