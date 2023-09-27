@@ -8,7 +8,7 @@
       <link href="/AcWing-Linux%E5%9F%BA%E7%A1%80%E8%AF%BE/Linux%E5%9F%BA%E7%A1%80/"/>
       <url>/AcWing-Linux%E5%9F%BA%E7%A1%80%E8%AF%BE/Linux%E5%9F%BA%E7%A1%80/</url>
       
-        <content type="html"><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="常用文件管理命令"><a href="#常用文件管理命令" class="headerlink" title="常用文件管理命令"></a>常用文件管理命令</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h2><p><code>根目录</code></p><p>&#x2F;</p><p><code>根目录/中常见文件夹</code></p><p>&#x2F;bin：存放系统可执行文件（二进制文件）的目录</p><p>&#x2F;boot：存放启动系统所需的文件，如内核文件和引导程序</p><p>&#x2F;dev：包含设备文件，用于与系统中的硬件设备进行交互</p><p>&#x2F;etc：存放系统配置文件</p><p>&#x2F;home：存放用户的主目录</p><p>&#x2F;lib：存放系统所需的共享库文件（安装包、头文件等）</p><p>&#x2F;media：用于挂载可移动设备（如光盘、USB驱动器）的目录</p><p>&#x2F;root：超级用户(root)的主目录</p><p>&#x2F;tmp：存放临时文件的目录</p><p>&#x2F;usr：存放系统软件资源，包括可执行文件、库文件、头文件等</p><p>&#x2F;var：存放可变数据文件，如日志文件和缓存文件</p><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><p>从根目录<code>/</code>开始描述</p><p>以 <code>/</code> 开头</p><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>从当前目录开始描述</p><p>开头不是 <code>/</code></p><p><code>.</code>表示当前目录</p><p><code>..</code>表示上一级目录</p><p><code>~</code>表示家目录，即 <em>~&#x2F; &#x3D; &#x2F;home&#x2F;用户名</em></p><h2 id="常用文件管理命令"><a href="#常用文件管理命令" class="headerlink" title="常用文件管理命令"></a>常用文件管理命令</h2><h3 id="Ctrl-C"><a href="#Ctrl-C" class="headerlink" title="Ctrl + C"></a>Ctrl + C</h3><p>作用一：直接杀掉某个程序</p><p>作用二：在输入指令的时候不想要本行了，直接Ctrl + C换行（取消命令，并且换行）</p><h3 id="Ctrl-U"><a href="#Ctrl-U" class="headerlink" title="Ctrl + U"></a>Ctrl + U</h3><p>直接清空本行命令</p><h3 id="Tab"><a href="#Tab" class="headerlink" title="Tab"></a>Tab</h3><p>可以补全命令和文件名（当只有一个备选项时）</p><p>如果补全不了（存在多个选项），快速按两下Tab，可以显示备选选项</p><h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p>列出当前目录下所有文件，蓝色是文件夹，白色的是普通文件，绿色的是可执行文件</p><p>ls命令可接参数</p><p>ls -l：查看每个文件的详细信息</p><p>ls -h：<code>人性化输出</code></p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230926141517171.png" alt="image-20230926141517171"></p><p>上图，（30952 byte &#x3D; 31K）</p><p>ls -a：显示全部文件（包含隐藏文件，所有隐藏文件以 . 开头）</p><p><code>ll = ls -la</code></p><p>叠加的参数顺序可以变，即<code>ls -la = ls -al</code></p><h3 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h3><p>显示当前路径</p><h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p>切换目录（change directory）</p><p>cd 默认返回家目录</p><p>cd xxx 表示进入目录 xxx</p><p>cd 后不加参数，默认返回家目录</p><p>cd - 返回上一个停留的目录，和 cd .. 不同</p><h3 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h3><p>复制命令（复制+粘贴+重命名）</p><p>cp xxx yyy : 将 xxx 文件复制成 yyy，xxx 和 yyy 可以是一个路径</p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230926143015310.png" alt="image-20230926143015310"></p><p>cp a b -r ：将a文件夹整个复制到b文件夹目录下</p><h3 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h3><p>mkdir xxx：创建文件夹 xxx</p><p>假如要创建一连串文件夹，可以采用 mkdir a&#x2F;b&#x2F;c -p，**-p** 的作用：如果文件夹存在则跳过，否则便创建</p><h3 id="history"><a href="#history" class="headerlink" title="history"></a>history</h3><p>显示历史用过的指令</p><h3 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h3><p>rm xxx：删除普通文件；rm xxx -r：删除文件夹</p><p><code>支持正则表达式</code>：例如当前文件夹下有：tmp1.txt、tmp2.txt，可使用：rm *.txt，直接全部删除</p><p>rm xxx -f：可用于删除被保护文件</p><h3 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h3><p>touch xxx：创建一个文件</p><h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>剪切 + 粘贴，兼具重命名的效果</p><p>和 <strong>cp</strong> 类似，cp是复制一份，源目录还存在一份；mv是剪切移动，源目录不存在备份。</p><h3 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h3><p>显示文件的内容</p><h2 id="tmux-和-vim"><a href="#tmux-和-vim" class="headerlink" title="tmux 和 vim"></a>tmux 和 vim</h2>]]></content>
       
       
       <categories>
@@ -530,9 +530,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -541,20 +541,9 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
-      
-        <content type="html"><![CDATA[<!-- 文章发布时间统计图 --><div id="posts-chart" data-start="2021-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章标签统计图 --><div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章分类统计图 --><div id="categories-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -575,10 +564,43 @@
     
     <entry>
       <title></title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<p>title: 友情链接<br>date: 2018-06-07 22:17:49<br>type: “link”</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/readPercent.css"/>
       <url>/css/readPercent.css</url>
       
         <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
+      
+        <content type="html"><![CDATA[<!-- 文章发布时间统计图 --><div id="posts-chart" data-start="2021-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章标签统计图 --><div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章分类统计图 --><div id="categories-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -597,28 +619,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/cursor.js"/>
-      <url>/js/cursor.js</url>
-      
-        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<p>title: 友情链接<br>date: 2018-06-07 22:17:49<br>type: “link”</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/fps.js"/>
       <url>/js/fps.js</url>
       
@@ -630,21 +630,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/js/cursor.js"/>
+      <url>/js/cursor.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
       
     </entry>
     
