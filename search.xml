@@ -8,7 +8,7 @@
       <link href="/AcWing-Linux%E5%9F%BA%E7%A1%80%E8%AF%BE/Linux%E5%9F%BA%E7%A1%80/"/>
       <url>/AcWing-Linux%E5%9F%BA%E7%A1%80%E8%AF%BE/Linux%E5%9F%BA%E7%A1%80/</url>
       
-        <content type="html"><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h2><p><code>根目录</code></p><p>&#x2F;</p><p><code>根目录/中常见文件夹</code></p><p>&#x2F;bin：存放系统可执行文件（二进制文件）的目录</p><p>&#x2F;boot：存放启动系统所需的文件，如内核文件和引导程序</p><p>&#x2F;dev：包含设备文件，用于与系统中的硬件设备进行交互</p><p>&#x2F;etc：存放系统配置文件</p><p>&#x2F;home：存放用户的主目录</p><p>&#x2F;lib：存放系统所需的共享库文件（安装包、头文件等）</p><p>&#x2F;media：用于挂载可移动设备（如光盘、USB驱动器）的目录</p><p>&#x2F;root：超级用户(root)的主目录</p><p>&#x2F;tmp：存放临时文件的目录</p><p>&#x2F;usr：存放系统软件资源，包括可执行文件、库文件、头文件等</p><p>&#x2F;var：存放可变数据文件，如日志文件和缓存文件</p><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><p>从根目录<code>/</code>开始描述</p><p>以 <code>/</code> 开头</p><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>从当前目录开始描述</p><p>开头不是 <code>/</code></p><p><code>.</code>表示当前目录</p><p><code>..</code>表示上一级目录</p><p><code>~</code>表示家目录，即 <em>~&#x2F; &#x3D; &#x2F;home&#x2F;用户名</em></p><h2 id="常用文件管理命令"><a href="#常用文件管理命令" class="headerlink" title="常用文件管理命令"></a>常用文件管理命令</h2><h3 id="Ctrl-C"><a href="#Ctrl-C" class="headerlink" title="Ctrl + C"></a>Ctrl + C</h3><p>作用一：直接杀掉某个程序</p><p>作用二：在输入指令的时候不想要本行了，直接Ctrl + C换行（取消命令，并且换行）</p><h3 id="Ctrl-U"><a href="#Ctrl-U" class="headerlink" title="Ctrl + U"></a>Ctrl + U</h3><p>直接清空本行命令</p><h3 id="Tab"><a href="#Tab" class="headerlink" title="Tab"></a>Tab</h3><p>可以补全命令和文件名（当只有一个备选项时）</p><p>如果补全不了（存在多个选项），快速按两下Tab，可以显示备选选项</p><h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p>列出当前目录下所有文件，蓝色是文件夹，白色的是普通文件，绿色的是可执行文件</p><p>ls命令可接参数</p><p>ls -l：查看每个文件的详细信息</p><p>ls -h：<code>人性化输出</code></p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230926141517171.png" alt="image-20230926141517171"></p><p>上图，（30952 byte &#x3D; 31K）</p><p>ls -a：显示全部文件（包含隐藏文件，所有隐藏文件以 . 开头）</p><p><code>ll = ls -la</code></p><p>叠加的参数顺序可以变，即<code>ls -la = ls -al</code></p><h3 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h3><p>显示当前路径</p><h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p>切换目录（change directory）</p><p>cd 默认返回家目录</p><p>cd xxx 表示进入目录 xxx</p><p>cd 后不加参数，默认返回家目录</p><p>cd - 返回上一个停留的目录，和 cd .. 不同</p><h3 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h3><p>复制命令（复制+粘贴+重命名）</p><p>cp xxx yyy : 将 xxx 文件复制成 yyy，xxx 和 yyy 可以是一个路径</p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230926143015310.png" alt="image-20230926143015310"></p><p>cp a b -r ：将a文件夹整个复制到b文件夹目录下</p><h3 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h3><p>mkdir xxx：创建文件夹 xxx</p><p>假如要创建一连串文件夹，可以采用 mkdir a&#x2F;b&#x2F;c -p，**-p** 的作用：如果文件夹存在则跳过，否则便创建</p><h3 id="history"><a href="#history" class="headerlink" title="history"></a>history</h3><p>显示历史用过的指令</p><h3 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h3><p>rm xxx：删除普通文件；rm xxx -r：删除文件夹</p><p><code>支持正则表达式</code>：例如当前文件夹下有：tmp1.txt、tmp2.txt，可使用：rm *.txt，直接全部删除</p><p>rm xxx -f：可用于删除被保护文件</p><h3 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h3><p>touch xxx：创建一个文件</p><h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>剪切 + 粘贴，兼具重命名的效果</p><p>和 <strong>cp</strong> 类似，cp是复制一份，源目录还存在一份；mv是剪切移动，源目录不存在备份。</p><h3 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h3><p>显示文件的内容</p><h2 id="tmux-和-vim"><a href="#tmux-和-vim" class="headerlink" title="tmux 和 vim"></a>tmux 和 vim</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h2><p><code>根目录</code></p><p>&#x2F;</p><p><code>根目录/中常见文件夹</code></p><p>&#x2F;bin：存放系统可执行文件（二进制文件）的目录</p><p>&#x2F;boot：存放启动系统所需的文件，如内核文件和引导程序</p><p>&#x2F;dev：包含设备文件，用于与系统中的硬件设备进行交互</p><p>&#x2F;etc：存放系统配置文件</p><p>&#x2F;home：存放用户的主目录</p><p>&#x2F;lib：存放系统所需的共享库文件（安装包、头文件等）</p><p>&#x2F;media：用于挂载可移动设备（如光盘、USB驱动器）的目录</p><p>&#x2F;root：超级用户(root)的主目录</p><p>&#x2F;tmp：存放临时文件的目录</p><p>&#x2F;usr：存放系统软件资源，包括可执行文件、库文件、头文件等</p><p>&#x2F;var：存放可变数据文件，如日志文件和缓存文件</p><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><p>从根目录<code>/</code>开始描述</p><p>以 <code>/</code> 开头</p><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>从当前目录开始描述</p><p>开头不是 <code>/</code></p><p><code>.</code>表示当前目录</p><p><code>..</code>表示上一级目录</p><p><code>~</code>表示家目录，即 <em>~&#x2F; &#x3D; &#x2F;home&#x2F;用户名</em></p><h2 id="常用文件管理命令"><a href="#常用文件管理命令" class="headerlink" title="常用文件管理命令"></a>常用文件管理命令</h2><h3 id="Ctrl-C"><a href="#Ctrl-C" class="headerlink" title="Ctrl + C"></a>Ctrl + C</h3><p>作用一：直接杀掉某个程序</p><p>作用二：在输入指令的时候不想要本行了，直接Ctrl + C换行（取消命令，并且换行）</p><h3 id="Ctrl-U"><a href="#Ctrl-U" class="headerlink" title="Ctrl + U"></a>Ctrl + U</h3><p>直接清空本行命令</p><h3 id="Tab"><a href="#Tab" class="headerlink" title="Tab"></a>Tab</h3><p>可以补全命令和文件名（当只有一个备选项时）</p><p>如果补全不了（存在多个选项），快速按两下Tab，可以显示备选选项</p><h3 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h3><p>列出当前目录下所有文件，蓝色是文件夹，白色的是普通文件，绿色的是可执行文件</p><p>ls命令可接参数</p><p>ls -l：查看每个文件的详细信息</p><p>ls -h：<code>人性化输出</code></p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230926141517171.png" alt="image-20230926141517171"></p><p>上图，（30952 byte &#x3D; 31K）</p><p>ls -a：显示全部文件（包含隐藏文件，所有隐藏文件以 . 开头）</p><p><code>ll = ls -la</code></p><p>叠加的参数顺序可以变，即<code>ls -la = ls -al</code></p><h3 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h3><p>显示当前路径</p><h3 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h3><p>切换目录（change directory）</p><p>cd 默认返回家目录</p><p>cd xxx 表示进入目录 xxx</p><p>cd 后不加参数，默认返回家目录</p><p>cd - 返回上一个停留的目录，和 cd .. 不同</p><h3 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h3><p>复制命令（复制+粘贴+重命名）</p><p>cp xxx yyy : 将 xxx 文件复制成 yyy，xxx 和 yyy 可以是一个路径</p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230926143015310.png" alt="image-20230926143015310"></p><p>cp a b -r ：将a文件夹整个复制到b文件夹目录下</p><h3 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h3><p>mkdir xxx：创建文件夹 xxx</p><p>假如要创建一连串文件夹，可以采用 mkdir a&#x2F;b&#x2F;c -p，**-p** 的作用：如果文件夹存在则跳过，否则便创建</p><h3 id="history"><a href="#history" class="headerlink" title="history"></a>history</h3><p>显示历史用过的指令</p><h3 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h3><p>rm xxx：删除普通文件；rm xxx -r：删除文件夹</p><p><code>支持正则表达式</code>：例如当前文件夹下有：tmp1.txt、tmp2.txt，可使用：rm *.txt，直接全部删除</p><p>rm xxx -f：可用于删除被保护文件</p><h3 id="touch"><a href="#touch" class="headerlink" title="touch"></a>touch</h3><p>touch xxx：创建一个文件</p><h3 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h3><p>剪切 + 粘贴，兼具重命名的效果</p><p>和 <strong>cp</strong> 类似，cp是复制一份，源目录还存在一份；mv是剪切移动，源目录不存在备份。</p><h3 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h3><p>显示文件的内容</p><h2 id="tmux-和-vim"><a href="#tmux-和-vim" class="headerlink" title="tmux 和 vim"></a>tmux 和 vim</h2><h3 id="tmux"><a href="#tmux" class="headerlink" title="tmux"></a>tmux</h3><p><strong>功能</strong></p><p>（1）分屏</p><p>（2）允许断开Terminal连接后，继续运行进程（使得进程不会因为连接中断而结束）</p><p><strong>结构</strong></p><p><img src="https://eternity-1320026116.cos.ap-beijing.myqcloud.com/image-20230927223824340.png" alt="image-20230927223824340"></p><p><strong>操作</strong></p><p>（1）tmux：新建一个session，其中包含一个window，window中包含一个pane，pane里打开了一个shell对话框。</p><p>（2）按下 Ctrl + b 后手指松开，然后按 % ，将当前 pane 左右平分成两个 pane。</p><p>（3）按下 Ctrl + b 后手指松开，然后按 “ ，将当前 pane 上下平分成两个 pane。</p><p>（4）Ctrl + d：关闭当前 pane；如果当前 window 的所有 pane 均已关闭，则自动关闭 window，如果当前 session 的所有 window 均已关闭，则自动关闭 session。</p><p>（5）鼠标点击可以选 pane。</p><p>（6）按下ctrl + a后手指松开，然后按方向键：选择相邻的pane。</p><p>（7）鼠标拖动pane之间的分割线，可以调整分割线的位置。   </p><p>（8）按住ctrl + a的同时按方向键，可以调整pane之间分割线的位置。</p><p>（9）按下ctrl + a后手指松开，然后按z：将当前pane全屏&#x2F;取消全屏。</p><p>（10）按下ctrl + a后手指松开，然后按d：挂起当前session。</p><p>（11）tmux a：打开之前挂起的 session 或者 tmux attach</p><p>（12）按下ctrl + a后手指松开，然后按s：选择其它session。<br>        方向键 —— 上：选择上一项 session&#x2F;window&#x2F;pane</p><p>​方向键 —— 下：选择下一项 session&#x2F;window&#x2F;pane</p><p>​方向键 —— 右：展开当前项 session&#x2F;window</p><p>​方向键 —— 左：闭合当前项 session&#x2F;window</p><p>（13）按下Ctrl + a后手指松开，然后按c：在当前session中创建一个新的window。</p><p>（14）按下Ctrl + a后手指松开，然后按w：选择其他window，操作方法与(12)完全相同。</p><p>（15）按下Ctrl + a后手指松开，然后按PageUp：翻阅当前pane内的内容。如果没有PageUp，用：fn + ↑代替</p><p>（16）鼠标滚轮：翻阅当前pane内的内容。</p><p>（17）在tmux中选中文本时，需要按住shift键。（仅支持Windows和Linux，不支持Mac，不过该操作并不是必须的，因此影响不大）</p><p>（18）tmux中复制&#x2F;粘贴文本的通用方式：</p><p>​(1) 按下 Ctrl + a 后松开手指，然后按 [</p><p>​(2) 用鼠标选中文本，被选中的文本会被自动复制到 tmux 的剪贴板</p><p>​(3) 按下 Ctrl + a 后松开手指，然后按 ]，会将剪贴板中的内容粘贴到光标处</p><h3 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h3><p><strong>功能</strong></p><p>（1）命令行模式下的文本编辑器。</p><p>（2）根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。</p><p>（3）使用方式：vim filename</p><p>​如果已有该文件，则打开它。</p><p>​如果没有该文件，则打开一个心得文件，并命名为 filename。</p><p><strong>模式</strong></p><p>（1）一般命令模式</p><p>​默认模式。命令输入方式：类似于打游戏放技能，按不同字符，即可进行不同操作。可以复制、黏贴、删除文本等。</p><p>（2）编辑模式</p><p>​在一般命令模式里按下 i，会进入编辑模式。</p><p>​按下 ESC 会退出编辑模式，返回到一般命令模式。</p><p>（3）命令行模式</p><p>​在一般命令模式里按下 <code>:/?</code> 三个中任意一个，会进入命令行模式。命令行在最下面。</p><p>​可以查找、替换、保存、退出、配置编辑器等。</p><p><strong>操作</strong></p><p>（1）<code>i</code> 进入编辑模式</p><p>（2）<code>ESC</code> 进入一般命令模式</p><p>（3）<code>h 或 左箭头键</code>：光标向左移动一个字符</p><p>（4）<code>l 或 右箭头键</code>：光标向右移动一个字符</p><p>（5）<code>j 或 下箭头键</code>：光标向下移动一个字符</p><p>（6）<code>k 或 上箭头键</code>：光标向上移动一个字符</p><p>（7）<code>n&lt;Space&gt;</code> n表示数字，按下数字后再按空格，光标会向右移动这一行的n个字符</p><p>（8）<code>0 或 功能键[Home]</code>：光标移动到本行开头</p><p>（9）<code>$ 或 功能键[End]</code>：光标移动到本行末尾</p><p>（10）<code>G</code> 光标移动到最后一行</p><p>（11）<code>:n 或 nG</code> n为数字，光标移动到第n行</p><p>（12）<code>gg</code> 光标移动到第一行，相当于1G</p><p>（13）<code>n&lt;Enter&gt;</code> n为数字，光标向下移动n行</p><p>（14）<code>/word</code> 向光标之下寻找第一个值为word的字符串</p><p>（15）<code>?word</code> 向光标之上寻找第一个值为word的字符串</p><p>（16）<code>n</code> 重复前一个查找操作</p><p>（17）<code>N</code> 反向重复前一个查找操作</p><p>（18）<code>:noh</code>  关闭查找关键词高亮</p><p>（19）<code>:n1,n2s/word1/word2/g</code>  n1与n2为数字，在第n1行与n2行之间寻找word1这个字符串，并将该字符串替换为word2</p><p>（20）<code>:1,$s/word1/word2/g</code>：将全文的word1替换为word2</p><p>（21）较（20）多一个在替换前要求用户确认。</p><p>（22）<code>v</code> 选中文本，按两下 ESC 即可取消选中文本</p><p>（23）<code>d</code> 删除选中的文本（实际为剪切）</p><p>（24）<code>dd</code> 删除当前行</p><p>（25）<code>y</code> 复制选中文本</p><p>（26）<code>yy</code> 复制当前行</p><p>（27）<code>p</code> 将复制的数据在光标的下一个位置（如果复制的内容是选中的文本）粘贴，（如果复制的内容是一整行（yy），就在光标下一行粘贴）</p><p>（28）<code>u</code> 撤销</p><p>（29）<code>Ctrl + r</code> 取消撤销</p><p>（30）<code>Shift + &gt;</code> 将选中的文本整体向右移动</p><p>（31）<code>Shift + &lt;</code> 将选中的文本整体向左移动</p><p>（32）<code>:w</code> 保存</p><p>（33）<code>:w!</code> 强制保存</p><p>（34）<code>:q</code> 退出</p><p>（35）<code>:q!</code> 强制退出</p><p>（36）<code>:wq</code> 保存并退出</p><p>（37）<code>:set nu</code> 显示行号</p><p>（38）<code>:set nonu</code> 隐藏行号</p><p>（39）<code>:set paste</code> 设置成粘贴模式，取消代码自动缩进</p><p>（40）<code>:set nopaste</code> 取消粘贴模式，开启代码自动缩进</p><p>（41）<code>gg=G</code> 将全文代码格式化</p><p>（42）<code>Ctrl + q</code> 当 vim 卡死时，可以取消当前正在执行的命令</p><p><strong>异常处理</strong></p><p>每次用 vim 编辑文件时，会自动创建一个 .filename.swp 的临时文件。</p><p>如果打开某个文件时，该文件的 swp 文件已存在，则会报错。此时解决办法有两种：</p><p>（1）找到正在打开该文件的程序，并退出。</p><p>（2）直接删掉该swp文件即可。</p>]]></content>
       
       
       <categories>
@@ -563,44 +563,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<p>title: 友情链接<br>date: 2018-06-07 22:17:49<br>type: “link”</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
-      
-        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>charts</title>
       <link href="/charts/index.html"/>
       <url>/charts/index.html</url>
       
         <content type="html"><![CDATA[<!-- 文章发布时间统计图 --><div id="posts-chart" data-start="2021-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章标签统计图 --><div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章分类统计图 --><div id="categories-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -619,10 +586,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/fps.js"/>
-      <url>/js/fps.js</url>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
       
-        <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
       
     </entry>
     
@@ -641,10 +608,43 @@
     
     <entry>
       <title></title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<p>title: 友情链接<br>date: 2018-06-07 22:17:49<br>type: “link”</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/fps.js"/>
+      <url>/js/fps.js</url>
+      
+        <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/title.js"/>
       <url>/js/title.js</url>
       
         <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
