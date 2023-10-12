@@ -8,7 +8,7 @@
       <link href="/PDF/PDF/"/>
       <url>/PDF/PDF/</url>
       
-        <content type="html"><![CDATA[<h1 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h1><embed src="./PyTorch.pdf" width="100%" height="750" type="application/pdf"><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="Elementary-tips"><a href="#Elementary-tips" class="headerlink" title="Elementary tips"></a>Elementary tips</h2><embed src="./Elementary tips.pdf" width="100%" height="750" type="application/pdf"><h2 id="Thinking-in-Objects"><a href="#Thinking-in-Objects" class="headerlink" title="Thinking in Objects"></a>Thinking in Objects</h2><embed src="./Thinking in Objects.pdf" width="100%" height="750" type="application/pdf"><h2 id="Inheritance-and-Polymorphism"><a href="#Inheritance-and-Polymorphism" class="headerlink" title="Inheritance and Polymorphism"></a>Inheritance and Polymorphism</h2><embed src="./Inheritance and Polymorphism.pdf" width="100%" height="750" type="application/pdf"><h2 id="Exception-Handing-and-Text-IO"><a href="#Exception-Handing-and-Text-IO" class="headerlink" title="Exception Handing and Text IO"></a>Exception Handing and Text IO</h2><embed src="./Exception Handing and Text IO.pdf" width="100%" height="750" type="application/pdf"><h2 id="Abstract-Classes-and-Interfaces"><a href="#Abstract-Classes-and-Interfaces" class="headerlink" title="Abstract Classes and Interfaces"></a>Abstract Classes and Interfaces</h2><embed src="./Abstract Classes and Interfaces.pdf" width="100%" height="750" type="application/pdf"><h2 id="Binary-IO"><a href="#Binary-IO" class="headerlink" title="Binary IO"></a>Binary IO</h2><embed src="./Binary IO.pdf" width="100%" height="750" type="application/pdf"><h2 id="Lists-Stacks-Queues-and-Priority-Queues"><a href="#Lists-Stacks-Queues-and-Priority-Queues" class="headerlink" title="Lists, Stacks, Queues, and Priority Queues"></a>Lists, Stacks, Queues, and Priority Queues</h2><embed src="./Lists, Stacks, Queues, and Priority Queues.pdf" width="100%" height="750" type="application/pdf"><h2 id="Sets-and-Maps"><a href="#Sets-and-Maps" class="headerlink" title="Sets and Maps"></a>Sets and Maps</h2><embed src="./Sets and Maps.pdf" width="100%" height="750" type="application/pdf">]]></content>
+        <content type="html"><![CDATA[<h1 id="Pytorch"><a href="#Pytorch" class="headerlink" title="Pytorch"></a>Pytorch</h1><embed src="./PyTorch.pdf" width="100%" height="750" type="application/pdf"><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h2 id="Elementary-tips"><a href="#Elementary-tips" class="headerlink" title="Elementary tips"></a>Elementary tips</h2><embed src="./Machine-Learning/Elementary tips.pdf" width="100%" height="750" type="application/pdf"><h2 id="Thinking-in-Objects"><a href="#Thinking-in-Objects" class="headerlink" title="Thinking in Objects"></a>Thinking in Objects</h2><embed src="./Machine-Learning/Thinking in Objects.pdf" width="100%" height="750" type="application/pdf"><h2 id="Inheritance-and-Polymorphism"><a href="#Inheritance-and-Polymorphism" class="headerlink" title="Inheritance and Polymorphism"></a>Inheritance and Polymorphism</h2><embed src="./Machine-Learning/Inheritance and Polymorphism.pdf" width="100%" height="750" type="application/pdf"><h2 id="Exception-Handing-and-Text-IO"><a href="#Exception-Handing-and-Text-IO" class="headerlink" title="Exception Handing and Text IO"></a>Exception Handing and Text IO</h2><embed src="./Machine-Learning/Exception Handling and Text IO.pdf" width="100%" height="750" type="application/pdf"><h2 id="Abstract-Classes-and-Interfaces"><a href="#Abstract-Classes-and-Interfaces" class="headerlink" title="Abstract Classes and Interfaces"></a>Abstract Classes and Interfaces</h2><embed src="./Machine-Learning/Abstract Classes and Interfaces.pdf" width="100%" height="750" type="application/pdf"><h2 id="Binary-IO"><a href="#Binary-IO" class="headerlink" title="Binary IO"></a>Binary IO</h2><embed src="./Machine-Learning/Binary IO.pdf" width="100%" height="750" type="application/pdf"><h2 id="Lists-Stacks-Queues-and-Priority-Queues"><a href="#Lists-Stacks-Queues-and-Priority-Queues" class="headerlink" title="Lists, Stacks, Queues, and Priority Queues"></a>Lists, Stacks, Queues, and Priority Queues</h2><embed src="./Machine-Learning/Lists, Stacks, Queues, and Priority Queues.pdf" width="100%" height="750" type="application/pdf"><h2 id="Sets-and-Maps"><a href="#Sets-and-Maps" class="headerlink" title="Sets and Maps"></a>Sets and Maps</h2><embed src="./Machine-Learning/Sets and Maps.pdf" width="100%" height="750" type="application/pdf">]]></content>
       
       
       <categories>
@@ -617,17 +617,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -639,9 +628,53 @@
     
     
     <entry>
+      <title></title>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
+      
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
+      
+        <content type="html"><![CDATA[<!-- 文章发布时间统计图 --><div id="posts-chart" data-start="2021-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章标签统计图 --><div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章分类统计图 --><div id="categories-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -661,44 +694,11 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
-      
-        <content type="html"><![CDATA[<!-- 文章发布时间统计图 --><div id="posts-chart" data-start="2021-01" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章标签统计图 --><div id="tags-chart" data-length="10" style="border-radius: 8px; height: 300px; padding: 10px;"></div><!-- 文章分类统计图 --><div id="categories-chart" style="border-radius: 8px; height: 300px; padding: 10px;"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
-      
-        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/js/console.js"/>
       <url>/js/console.js</url>
       
         <content type="html"><![CDATA[var now1 = new Date();function createtime1() {    var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间    now1.setTime(now1.getTime() + 250);    var days = (now1 - grt) / 1000 / 60 / 60 / 24;    var dnum = Math.floor(days);    var ascll = [        `欢迎来到Fomalhaut🥝の小家!`,        `Future is now 🍭🍭🍭`,        `        ███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ ██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    █████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    ██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    ██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██                                                 `,        "小站已经苟活",        dnum,        "天啦!",        "©2022 By Fomalhaut",    ];    setTimeout(        console.log.bind(            console,            `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,            "color:#39c5bb",            "",            "color:#39c5bb",            "color:#39c5bb",            "",            "color:#39c5bb",            ""        )    );}createtime1();function createtime2() {    var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」`, `Photo captured: `, ` 🤪 `];    setTimeout(        console.log.bind(            console,            `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,            "color:white; background-color:#10bcc0",            "",            "",            'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'        )    );    setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#23c682", ""));    setTimeout(        console.warn.bind(            console,            "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",            "color:white; background-color:#f0ad4e",            ""        )    );    setTimeout(console.log.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#4f90d9", ""));    setTimeout(        console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")    );}createtime2();// 重写console方法console.log = function () { };console.error = function () { };console.warn = function () { };]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/cursor.js"/>
-      <url>/js/cursor.js</url>
-      
-        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
@@ -717,10 +717,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/js/cursor.js"/>
+      <url>/js/cursor.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
@@ -738,11 +738,11 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '👀跑哪里去了~';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🐖抓到你啦～';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
       
     </entry>
     
